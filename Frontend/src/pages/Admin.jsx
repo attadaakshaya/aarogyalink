@@ -11,7 +11,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchAdminData = async () => {
             try {
-                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+                const API_URL = import.meta.env.VITE_API_URL || 'https://aarogyalink-f0en.onrender.com';
 
                 const [statsRes, diagnosesRes] = await Promise.all([
                     axios.get(`${API_URL}/api/admin/stats`),

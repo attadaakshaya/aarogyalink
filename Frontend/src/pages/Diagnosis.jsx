@@ -24,7 +24,7 @@ const Diagnosis = () => {
 
         try {
             // Pointing to local backend, change in production
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+            const API_URL = import.meta.env.VITE_API_URL || 'https://aarogyalink-f0en.onrender.com';
             const response = await axios.post(`${API_URL}/api/diagnosis`, { symptoms });
             setResult(response.data);
         } catch (err) {

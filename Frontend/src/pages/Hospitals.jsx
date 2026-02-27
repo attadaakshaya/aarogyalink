@@ -48,7 +48,7 @@ const Hospitals = () => {
         setError('');
 
         try {
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+            const API_URL = import.meta.env.VITE_API_URL || 'https://aarogyalink-f0en.onrender.com';
             const response = await axios.post(`${API_URL}/api/hospitals/search`, {
                 lat: location.lat,
                 lng: location.lng,
