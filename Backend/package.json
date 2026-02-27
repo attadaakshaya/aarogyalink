@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@google/genai": "^1.43.0",
     "axios": "^1.13.5",

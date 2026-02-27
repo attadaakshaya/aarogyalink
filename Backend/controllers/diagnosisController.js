@@ -2,7 +2,7 @@ const { GoogleGenAI } = require('@google/genai');
 const DiagnosisModel = require('../models/Diagnosis'); // Import the Mongoose model
 
 // Initialize the client. Ensure GEMINI_API_KEY is in your .env file
-const ai = new GoogleGenAI({});
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 exports.analyzeSymptoms = async (req, res) => {
     try {
