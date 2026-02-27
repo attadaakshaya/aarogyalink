@@ -95,6 +95,6 @@ exports.analyzeSymptoms = async (req, res) => {
 
     } catch (error) {
         console.error("Error generating diagnosis:", error);
-        res.status(500).json({ error: 'An error occurred while analyzing symptoms.' });
+        res.status(500).json({ error: 'An error occurred while analyzing symptoms.', details: error.message || error.toString() });
     }
 };
