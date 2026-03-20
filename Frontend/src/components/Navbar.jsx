@@ -9,13 +9,13 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo Area */}
                     <div className="flex items-center">
-                        <Link to="/" className="flex items-center gap-2">
-                            <Leaf className="text-primary-500" size={24} />
-                            <div className="flex flex-col">
-                                <span className="font-bold text-xl text-slate-800 tracking-tight leading-none">
-                                    Aarogya<span className="text-primary-600">Link</span>
+                        <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+                            <Leaf className="text-emerald-500 -rotate-12" size={36} strokeWidth={2.5} />
+                            <div className="flex flex-col mt-1">
+                                <span className="font-black text-3xl text-slate-800 tracking-tight leading-none">
+                                    Aarogya<span className="text-emerald-500">Link</span>
                                 </span>
-                                <span className="text-[10px] text-slate-500 uppercase tracking-widest mt-0.5">
+                                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-0.5">
                                     Your Healthcare Connection
                                 </span>
                             </div>

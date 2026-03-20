@@ -131,14 +131,14 @@ const Home = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
                     {/* Left Column - Form */}
-                    <div className="lg:col-span-7 space-y-6">
+                    <form onSubmit={handleAnalyze} className="lg:col-span-7 space-y-6">
                         <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
                             <h2 className="text-2xl font-bold text-slate-800 tracking-tight">Symptom Analysis</h2>
                             <p className="text-slate-500 mt-1 mb-8 text-sm">Provide detailed information for accurate healthcare recommendations.</p>
 
                             <h3 className="text-lg font-bold text-slate-800 mb-6">Your Health Details</h3>
 
-                            <form onSubmit={handleAnalyze} className="space-y-6">
+                            <div className="space-y-6">
                                 {/* Symptoms */}
                                 <div>
                                     <label className="flex items-center gap-2 text-sm font-medium text-slate-700 mb-2">
@@ -262,7 +262,7 @@ const Home = () => {
                                         onChange={handleInputChange}
                                     />
                                 </div>
-                            </form>
+                            </div>
                         </div>
 
                         {/* File Upload & Submit Section */}
@@ -297,7 +297,7 @@ const Home = () => {
                                 )}
                             </label>
                             <button
-                                onClick={handleAnalyze}
+                                type="submit"
                                 disabled={loading}
                                 className="w-full bg-primary-500 hover:bg-primary-600 text-white font-bold py-4 px-6 rounded-lg transition-colors flex justify-center items-center"
                             >
@@ -311,7 +311,7 @@ const Home = () => {
                                 )}
                             </button>
                         </div>
-                    </div>
+                    </form>
 
                     {/* Right Column - Info */}
                     <div className="lg:col-span-5 space-y-8">
